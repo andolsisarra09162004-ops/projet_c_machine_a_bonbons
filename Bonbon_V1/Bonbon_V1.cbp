@@ -31,9 +31,35 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Bonbon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bonbon.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="combinaison.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="combinaison.h" />
+		<Unit filename="distributeur.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="distributeur.h" />
+		<Unit filename="jeu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="jeu.h" />
+		<Unit filename="joueur.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="joueur.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="score.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="score.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

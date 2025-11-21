@@ -1,112 +1,56 @@
 #include <stdio.h>
 #include <stdlib.h>
-//======STRUCTURES DU PROJET=====//
-/* Bonbon*/
-typedef struct Bonbon {
-      char couleur[20];
-      int valeur;}Bonbon;
-
-/*Combinaison*/
-typedef struct Combinaison {
-    Bonbon b1;
-    Bonbon b2;
-    Bonbon b3;
-    int points;} Combinaison;
+#include "bonbon.h"
+#include "distributeur.h"
+#include "combinaison.h"
+#include "joueur.h"
+#include "score.h"
 
 
-/*Distributeur*/
-typedef struct Distributeur {
-    Bonbon reserve[100];
-    int nbBonbons;} Distributeur;
+#include "constantes.h"
+#include <string.h>
+#include "jeu.h"
 
-/*Joueur*/
-typedef struct Joueur {
-    char pseudo[30];
-    int score;} Joueur;
+void afficherMenuPrincipal() {
+    printf("\n");
 
-/* ===MENU===*/
-void menuPrincipale()
-{int choix;
-    do{
-            printf("###JEU DE MACHINE A BONBONS### /n");
-            printf("1) Jouer /n");
-            printf("2) Paramétrer le jeu");
-            printf("3)Afficher les scores /n");
-            printf("4)Quitter le jeu");
-            printf("Votre choix : ");
-            scanf(" %d", & choix);
-            switch (choix) {
+    printf("      MACHINE A BONBONS      \n \n");
 
-                   case 1:
-                        jouerAuto();
-                        break;
-                   case 2:
-                        parametrageManuel();
-                        break;
-                    case 3:
-                       afficherScores();
-                        break;
-                    case 4:
-                        quitterJeu();
-                         break;
-                    default:
-                        printf("\n Choix invalide, veuillez réessayer.\n");        }
-                            }while choix != 4);}
-
+    printf(" 1. Jouer une partie          \n");
+    printf(" 2. Parametrer le jeu         \n");
+    printf(" 3. Voir les scores           \n");
+    printf(" 4. Quitter                   \n");
 
 }
 
-/*
+int main() {
+    Jeu jeu;
+    initialiserJeu(&jeu);
 
-//===jouerAuto=== //
-
-void jouerAuto() {
-    printf("\n jouer automatiquement \n");
-    creer_distributeurs();
-    creer_combinaisons();
-    MAJ_Joueur();}
-
-//parametrageManuelle//
-
-void parametrageManuel() {
     int choix;
     do {
-        printf("\n### PARAMETRAGE DU JEU ###\n");
-printf("1. Créer un nouveau type de bonbon\n");
-printf("2. Définir la taille des réserves\n");
-printf("3. Créer de nouvelles combinaisons\n");
-printf("4. Retour au menu principal\n");
-printf("Votre choix : ");
-scanf("%d", &choix);
-        switch (choix) {
+        afficherMenuPrincipal();
+        printf("Votre choix: ");
+        scanf("%d", &choix);
+
+        switch(choix) {
             case 1:
-                creerBonbon();
+                lancerPartieAuto(&jeu);
                 break;
             case 2:
-                definirTailleReserve();
+                parametrerJeu(&jeu);
                 break;
             case 3:
-                creerCombinaison();
+                afficherScoresJeu(&jeu);
                 break;
             case 4:
-                printf("Retour au menu principal\n");
+                printf("Merci d'avoir jouÃ©! Ã€ bientÃ´t!\n");
                 break;
             default:
-                printf("Choix invalide Réessayez\n");        }
-    } while (choix != 4);}
+                printf("Choix invalide! Veuillez choisir entre 1 et 4.\n");
+        }
+    } while(choix != 4);
 
-//afficherScores//
-
-void afficherScores() {}
-
-
-*/
-
-
-
-int main()
-{
-    menuPrincipal();
-
+    sauvegarderDonnees(&jeu);
     return 0;
 }
