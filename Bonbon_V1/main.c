@@ -44,13 +44,11 @@ int main() {
                 afficherScoresJeu(&jeu);
                 break;
             case 4:
-                printf("Merci d'avoir joué! À bientôt!\n");
+                printf("Merci d'avoir joue a bientot\n");
                 break;
             default:
-                printf("Choix invalide! Veuillez choisir entre 1 et 4.\n");
+                printf("Choix invalide  Veuillez choisir entre 1 et 4.\n");
         }
     } while(choix != 4);
-
-    sauvegarderDonnees(&jeu);
-    return 0;
+    return 0 ;
 }

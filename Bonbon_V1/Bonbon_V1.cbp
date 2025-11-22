@@ -41,6 +41,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="combinaison.h" />
+		<Unit filename="constantes.h" />
 		<Unit filename="distributeur.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -37,7 +37,7 @@ int supprimerJoueur(Joueur joueurs[], int* nbJoueurs, const char* pseudo)
  {
     if (joueurs == NULL || nbJoueurs == NULL || pseudo == NULL)
         {
-        return 0; // Paramètres invalides
+        return 0;
     }
 
     for (int i = 0; i < *nbJoueurs; i++)
@@ -49,8 +49,8 @@ int supprimerJoueur(Joueur joueurs[], int* nbJoueurs, const char* pseudo)
                 joueurs[j] = joueurs[j + 1];
             }
             (*nbJoueurs)--;
-            return 1; // Suppression réussie
+            return 1;
         }
     }
-    return 0; // Joueur non trouvé
+    return 0; // Joueur non trouve
 }

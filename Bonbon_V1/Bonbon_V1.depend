@@ -16,14 +16,14 @@
 
 1763684740 c:\users\andol\desktop\mp_c_2025\bonbon_v1\score.h
 
-1763685958 source:c:\users\andol\desktop\mp_c_2025\bonbon_v1\combinaison.c
+1763770094 source:c:\users\andol\desktop\mp_c_2025\bonbon_v1\combinaison.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"combinaison.h"
 	"bonbon.h"
 
-1763684326 c:\users\andol\desktop\mp_c_2025\bonbon_v1\combinaison.h
+1763771562 c:\users\andol\desktop\mp_c_2025\bonbon_v1\combinaison.h
 	"bonbon.h"
 
 1763685788 c:\users\andol\desktop\mp_c_2025\bonbon_v1\distributeur.h
@@ -32,19 +32,19 @@
 1763685754 c:\users\andol\desktop\mp_c_2025\bonbon_v1\joueur.h
 	<string.h>
 
-1763685754 source:c:\users\andol\desktop\mp_c_2025\bonbon_v1\joueur.c
+1763763996 source:c:\users\andol\desktop\mp_c_2025\bonbon_v1\joueur.c
 	<stdio.h>
 	<stdlib.h>
 	"joueur.h"
 
-1763686559 source:c:\users\andol\desktop\mp_c_2025\bonbon_v1\distributeur.c
+1763769735 source:c:\users\andol\desktop\mp_c_2025\bonbon_v1\distributeur.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"distributeur.h"
 	"bonbon.h"
 
-1763686028 source:c:\users\andol\desktop\mp_c_2025\bonbon_v1\jeu.c
+1763771225 source:c:\users\andol\desktop\mp_c_2025\bonbon_v1\jeu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -59,4 +59,16 @@
 	"constantes.h"
 
 1763686239 c:\users\andol\desktop\mp_c_2025\bonbon_v1\constantes.h
+
+1763764428 source:c:\users\andol\desktop\mp_c_2025\bonbon_v1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"bonbon.h"
+	"distributeur.h"
+	"combinaison.h"
+	"joueur.h"
+	"score.h"
+	"constantes.h"
+	<string.h>
+	"jeu.h"
 

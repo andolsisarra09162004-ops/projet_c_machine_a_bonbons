@@ -15,7 +15,7 @@ Distributeur creerDistributeur(int id) {
 // Ajouter un bonbon
 int ajouterBonbonDistributeur(Distributeur *d, Bonbon b) {
     if (d->nbBonbons >= MAX_BONBONS) {
-        printf("Reserve pleine ! Impossible d'ajouter.\n");
+        printf("Reserve pleine , Impossible d'ajouter.\n");
         return 0;
     }
     d->reserve[d->nbBonbons] = b;
